@@ -1,0 +1,16 @@
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 120px;
+    width: 12vw;
+}
+.logo-div{
+    position: relative;
+}
+.grid-div{
+    place-items: center;
+}
+.container{
+    background-color: red;
+}
