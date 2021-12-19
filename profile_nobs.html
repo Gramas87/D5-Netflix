@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles_flex.css">
+    <title>Netflix Profile</title>
+</head>
+<body>
+
+
+
+    <div class="container">
+
+
+        <nav>
+            <img src="/assets/netflix_logo.png" alt="Netflix logo">
+        </nav>
+
+
+        <div class="wrapper">
+            <div class="grid-item-one">
+                <h1>Edit Profile</h1>
+                <div class="line"></div>
+            </div>
+            
+                <div class="grid-item-two">
+                    <img src="/assets/avatar.png" alt="Profile picture">
+                </div>
+                <div class="settings-container">
+                    <div class="grid-item-three">
+                        <p class="user-name">Mateusz Ginter</p>
+                        <p class="title">Language:</p>
+                        <select name="languages" id="language-select">
+                            <option value="Engilsh">English</option>
+                            <option value="Polish">Polish</option>
+                            <option value="German">German</option>
+                            <option value="Spanish">Spanish</option>
+                        </select>
+                        <div class="line short-line"></div>
+                    </div>
+                    <div class="grid-item-four">
+                        <p class="title">Maturity Settings</p>
+                        <p class="item-grid-four">All Maturity Ratings</p>
+                        <p class="options-text">Show titles of all maturity ratings for this profile.</p>
+                        <button>Edit</button>
+                        <div class="line short-line"></div>
+                    </div>
+                    <div class="grid-item-five">
+                        <p class="title">Autoplay controls</p>
+                        <div class="check-item">
+                            <input type="checkbox" name="check-one" id="check-one">
+                            <label class="options-text" for="check-one">Autoplay next episode in a series on all devices.</label>
+                        </div>
+                        <div class="check-item">
+                            <input type="checkbox" name="check-one" id="check-one">
+                            <label class="options-text" for="check-one">Autoplay previews while browsing on all devices.</label>
+                        </div>
+                    </div>
+                </div>
+            <div class="grid-item-six">
+                <button class="save-btn">Save</button>
+                <button>Cancel</button>
+                <button>Delete Profile</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

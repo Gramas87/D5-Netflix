@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-light: #FFFFEF;
+    --text-grey: #BCBCCC;
+    --bg-clr: #141414;
+    --bg-grey: #6e776f;
+    --bg-dark: #3e463e;
+    --btn-grey: #808080;
+
+    --font-text: 'Open Sans', sans-serif;
+
+}
+
+/* ****************** LAYOUT ****************** */
+
+body{
+    background-color: var(--bg-clr);
+    color: var(--text-light);
+    line-height: 1.2;
+    font-family: var(--font-text);
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+.container{
+    height: 100vh;
+}
+.wrapper {
+    width: 45vw;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "img language"
+    "space settings"
+    "space controls"
+    "footer footer";
+}
+.settings-container{
+    white-space: nowrap;
+    padding: 0 1rem;
+}
+.grid-item-one{
+    display: block;
+    grid-area: header;
+    white-space: nowrap;
+    padding: 1rem 0;
+    position: relative;
+}
+.grid-item-two{
+    grid-area: img;
+}
+.grid-item-three{
+    grid-area: language;
+}
+.grid-item-four{
+    grid-area: settings;
+    margin: 20px 0;
+}
+.grid-item-five{
+    grid-area: controls;
+    margin: 20px 0;
+}
+.grid-item-six{
+    --bg-grey: hsla(127, 4%, 45%, 0.5);
+    margin-top: 20px;
+    grid-area: footer;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--bg-grey);
+}
+
+/* ****************** BUTTONS ****************** */
+
+button{
+    width: clamp(70px, );
+    color: var(--btn-grey);
+    border: 1px solid var(--btn-grey);
+    background: none;
+    letter-spacing: 3px;
+    padding: 0.5rem 1.25rem;
+}
+#language-select{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--text-light);
+    background: none;
+    color: var(--text-light);
+    letter-spacing: 1px;
+}
+.grid-item-six button{
+    margin-top: 1rem;
+}
+
+
+/* ****************** CONTENT ****************** */
+
+nav > img{
+    max-width: 150px;
+}
+h1{
+    width: fit-content;
+}
+.title{
+    color: var(--bg-grey);
+    margin: 10px 0;
+}
+.grid-item-two > img{
+    max-width: 100%;
+    height: auto;
+}
+.user-name{
+    background-color: var(--bg-grey);
+    padding: 10px;
+}
+.item-grid-four{
+    display: inline-block;
+    background-color: var(--bg-dark);
+    padding: 6px 10px;
+    font-size: small;
+}
+.options-text{
+    font-size: small;
+    margin: 10px 0;
+}
+.check-item{
+    padding: 5px 0;
+}
+.save-btn{
+    background: var(--text-light);
+    color: var(--bg-clr);
+}
+.line{
+    margin-top: 10px;
+    height: 1px;
+    width: 100%;
+    background-color: var(--bg-grey);
+    opacity: 0.5;
+}
+.short-line{
+    margin-top: 30px;
+}
