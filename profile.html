@@ -34,80 +34,57 @@
       />
     </div>
     <div class="container">
-      <div class="profile row">
+
+      <div class="row row-one">
         <h1>Edit Profile</h1>
       </div>
-      <div class="line"></div>
+      
       <div class="row row-two">
-        <div class="col col-5 img-box">
-          <img class="img-avatar" src="/assets/avatar.png" alt="Avatar" />
+        <div class="col-3">
+          <img class="img-avatar" src="/assets/avatar.png" alt="Avatar"/>
         </div>
-        <div class="col col-7 name-container">
-          <p class="name-box">User Name</p>
-          <div class="dropdown-box">
-            <p>Language:</p>
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-expanded="false"
-              >
-                English
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Other</a>
-                <a class="dropdown-item" href="#">Other</a>
-                <a class="dropdown-item" href="#">Other</a>
-              </div>
-            </div>
-          </div>
+        <div class="col-9 name-container">
+          <p>User Name</p>
+          <p>Language:</p>
+          <select name="languages" id="language-select">
+            <option value="Engilsh">English</option>
+            <option value="Polish">Polish</option>
+            <option value="German">German</option>
+            <option value="Spanish">Spanish</option>
+          </select>
         </div>
       </div>
       
-
-      <div class="row">
-        <div class="col-lg-5"></div>
-        <div class="col-lg-7">
-          <div id="settings">Maturity Settings:</div>
-
-          <button id="maturity" input type="submit" class="btn btn-primary">
-            ALL MATURITY RATINGS
-          </button>
-          <div>show titles for all maturity ratings for this profile.</div>
-          <button id="edit" input type="submit" class="btn btn-primary">
-            EDIT
-          </button>
+      <div class="row row-three">
+        <div class="col-3"></div>
+        <div class="col-9">
+          <div class="settings">Maturity Settings:</div>
+          <p>ALL MATURITY RATINGS</p>
+          <div>Show titles for all maturity ratings for this profile.</div>
+          <button type="button" class="btn btn-dark">EDIT</button>
         </div>
-        <div class="line"></div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-5" > </div>
-        <div class="col-lg-7">
-        <div id="settings">
-            <h3>Autoplay controls</h3>
+      <div class="row row-four">
+        <div class="col-3" > </div>
+        <div class="col-9">
+          <div class="settings">Autoplay controls</div>
+          <div class="inputs">
+              <input type="checkbox" id="input-one">
+              <label for="input-one">Autoplay next episode in a series of all devices</label>
+          </div>
+          <div class="inputs">
+              <input type="checkbox" id="input-two">
+              <label for="input-two" >Autoplay next episode in a series of all devices</label>
+          </div>
         </div>
+      </div>
 
-        <div class="container ">
-            <div class=" ">
-                <input type="checkbox" class='checkbox text-sm-center' >
-                <label class=''>Autoplay next episode in a series of all devices</label>
-            </div>
-            <div class="">
-                <input type="checkbox" class='checkbox text-sm-left' >
-                <label class=''>Autoplay next episode in a series of all devices</label>
-            </div>
-        </div>
-        <div class="line"></div>
-      <div class="container d-flex">
-        <div class="row">
-            <div><button type="button" class="btn btn-light">Save</button></div>
-            <div><button type="button" class="btn btn-dark">Cancel</button></div>
-            <div><button type="button" class="btn btn-dark">Delete Profile</button></div>
-        </div>
-    </div>
+      <div class="row row-five">
+        <button type="button" class="btn btn-light">Save</button>
+        <button type="button" class="btn btn-dark">Cancel</button>
+        <button type="button" class="btn btn-dark">Delete Profile</button>
+      </div>
 
     </div>
   </body>
