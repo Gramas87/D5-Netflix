@@ -442,9 +442,13 @@
           });
       };
       genres();
+       
+      
+
+    
       const allMovies = async () => {
         fetch(
-          "https://striveschool-api.herokuapp.com/api/movies/" + genres[i],
+          "https://striveschool-api.herokuapp.com/api/movies/documentary" ,
           {
             method: "GET",
             headers: {
@@ -456,6 +460,29 @@
           .then((response) => response.json())
           .then((data) => {
             console.log(data);
+            tp = document.querySelector(".trending")
+            tp.innerHTML = ""
+            for (let i = 0; i < data.length; i++) {
+              tp.innerHTML += 
+              `
+              <div class="col-sm-6 col-md-4 col-lg-2">
+          <div ">
+            <img src="${data[i].imageUrl}" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">${data[i].name}</h5>
+              <p class="card-text">
+                ${data[i].description}
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">${data[i].category}</li>
+            </ul>
+          </div>
+        </div>
+        `
+              
+            }
+           
           });
       };
       allMovies();
